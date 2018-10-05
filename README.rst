@@ -31,13 +31,13 @@ Usage
 
    .. code-block:: bash
 
-       $ cookiecutter gh:Pylons/pyramid-cookiecutter-cornice
+       $ cookiecutter gh:geru-br/pyramid-cornice-cookiecutter
 
    Optionally append a specific branch checkout to the command:
 
    .. code-block:: bash
 
-       $ cookiecutter gh:Pylons/pyramid-cookiecutter-cornice --checkout master
+       $ cookiecutter gh:geru-br/pyramid-cornice-cookiecutter --checkout master
 
 2. Finish configuring the project by creating a virtual environment and installing your new project. These steps are output as part of the cookiecutter command above and are slightly different for Windows.
 
