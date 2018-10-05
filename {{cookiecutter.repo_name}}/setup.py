@@ -14,6 +14,8 @@ requires = [
     'pyramid_{{ cookiecutter.template_language }}',
     'pyramid_debugtoolbar',
     'waitress',
+    'cornice_swagger',
+    'cornice',
 ]
 
 tests_require = [
