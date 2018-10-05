@@ -1,6 +1,13 @@
+from pyramid.view import view_config
 from cornice import Service
 import colander
 from cornice.validators import colander_body_validator
+
+
+@view_config(route_name='home', renderer='templates/mytemplate.{{ "pt" if "chameleon" == cookiecutter.template_language else cookiecutter.template_language }}')
+def my_view(request):
+    return {'project': '{{ cookiecutter.project_name }}'}
+
 
 
 class RequestSchema(colander.MappingSchema):

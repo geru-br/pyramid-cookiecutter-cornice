@@ -45,6 +45,6 @@ def openAPI_spec(request):
 
 
 
-@view_config(route_name='apidocs', renderer='templates/swagger.jinja2')
+@view_config(route_name='apidocs', renderer='templates/swagger.{{ "pt" if "chameleon" == cookiecutter.template_language else cookiecutter.template_language }}')
 def apidocs(request):
     return {}
