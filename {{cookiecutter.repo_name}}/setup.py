@@ -16,6 +16,7 @@ requires = [
     'waitress',
     'cornice_swagger',
     'cornice',
+    'click'
 ]
 
 tests_require = [
@@ -49,6 +50,9 @@ setup(
     entry_points={
         'paste.app_factory': [
             'main = {{ cookiecutter.repo_name }}:main',
+        ],
+        'console_scripts': [
+            'manage = {{ cookiecutter.project_name }}.scripts.manage:cli',
         ],
     },
 )
