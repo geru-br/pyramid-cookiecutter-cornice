@@ -51,7 +51,8 @@ def display_actions_message():
     msg = dedent(
         """
         %(separator)s
-        Documentation: https://docs.pylonsproject.org/projects/pyramid/en/latest/
+        Pyramid:       https://docs.pylonsproject.org/projects/pyramid/en/latest/
+        Cornice:       https://cornice.readthedocs.io/en/latest/
         Tutorials:     https://docs.pylonsproject.org/projects/pyramid_tutorials/en/latest/
         Twitter:       https://twitter.com/PylonsProject
         Mailing List:  https://groups.google.com/forum/#!forum/pylons-discuss
@@ -75,6 +76,9 @@ def display_actions_message():
 
         Run your project.
             %(pserve_cmd)s development.ini
+            
+        Build restAPI python client
+            make build-clients
         """ % vars)
     print(msg)
 

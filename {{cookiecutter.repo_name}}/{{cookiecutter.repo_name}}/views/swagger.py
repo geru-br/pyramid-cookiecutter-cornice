@@ -20,7 +20,7 @@ def _get_services():
 def _openAPI_spec():
     swagger = {
         'info': {
-            'description': 'my API.'
+            'description': '{{cookiecutter.project_name}} RestAPI.'
         },
     }
 
@@ -34,7 +34,7 @@ def _openAPI_spec():
 
     generator = CorniceSwagger(_get_services())
 
-    spec = generator('my API', '1.0.0', swagger=swagger)
+    spec = generator('{{cookiecutter.project_name}} API', '1.0.0', swagger=swagger)
 
     return spec
 

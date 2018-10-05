@@ -9,8 +9,8 @@ class RequestSchema(colander.MappingSchema):
     uuid = colander.SchemaNode(colander.String(), description='UUID')
 
 
-requests_post = Service(name='requests_post', path='/api/v1/requests', tags=['requests'])
-requests_get = Service(name='requests_get', path='/api/v1/requests/{uuid}', tags=['requests'])
+requests_post = Service(name='resources_post', path='/api/v1/resource', tags=['resources'])
+requests_get = Service(name='resource_get', path='/api/v1/resource/{uuid}', tags=['resources'])
 
 
 @requests_post.post(schema=RequestSchema(), validators=(colander_body_validator,))
