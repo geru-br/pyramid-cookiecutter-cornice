@@ -2,7 +2,7 @@
 import json
 import click
 import json
-from {{ cookiecutter.project_name }}.swagger import _openAPI_spec
+from {{ cookiecutter.repo_name }}.swagger import _openAPI_spec
 
 @click.group()
 def swagger():
