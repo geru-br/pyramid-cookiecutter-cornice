@@ -52,7 +52,7 @@ setup(
             'main = {{ cookiecutter.repo_name }}:main',
         ],
         'console_scripts': [
-            'manage = {{ cookiecutter.project_name }}.scripts.manage:cli',
+            'manage = {{ cookiecutter.repo_name }}.scripts.manage:cli',
         ],
     },
 )
